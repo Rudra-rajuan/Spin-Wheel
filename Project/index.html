@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>91 WIN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Ticket and point  -->
+    <div class="text-center ticket-content">
+        <button >0 Point(s)</button>
+        <h3>0 Ticket</h3>
+    </div>
+    <div >
+        <img class="arrow" src="darrow.png" alt="">
+    </div>
+    <!-- Spinner and arrow  -->
+   <div class="flex items-center justify-center w-full spinner-arrow">
+        <div class="mainbox" id="mainbox">
+            <div class="border-light"></div>
+            <div class="box" id="box">
+                <div class="box1">
+                    <span class="font span1">
+                        <h5>5</h5>
+                    </span>
+                    <span class="font span2">
+                        <h5>10</h5>
+                    </span>
+                    <span class="font span3">
+                        <h5>15</h5>
+                    </span>
+                    <span class="font span4">
+                        <h5>20</h5>
+                    </span>
+                    <span class="font span5">
+                        <h5>25</h5>
+                    </span>
+                </div>
+                <div class="box2">
+                    <span class="font span1">
+                        <h5>30</h5>
+                    </span>
+                    <span class="font span2">
+                        <h5>35</h5>
+                    </span>
+                    <span class="font span3">
+                        <h5>40</h5>
+                    </span>
+                    <span class="font span4">
+                        <h5>45</h5>
+                    </span>
+                    <span class="font span5">
+                        <h5>50</h5>
+                    </span>
+                </div>
+                <button class="spin">
+                </button>
+            </div>
+        </div>
+   </div>
+
+    <!-- spinner button  -->
+    <div class="spin-btn text-center">
+        <img class="mx-auto" src="spin-button-en.png" alt="Spin button image" onclick="spin()">
+    </div>
+
+    <!-- Audio files  -->
+    <audio controls="controls" id="applause" src="applause.mp3" type="audion/mp3"></audio>
+    <audio controls="controls" id="wheel" src="wheel.mp3" type="audion/mp3"></audio>
+</body>
+<div class="terms">
+    <div class="condition">
+        TERMS & CONDITION
+    </div>
+    <div class="content">
+        <h3>Event: Wheel of Fortune. <br> <br> For all 22Win member can participate in this event. <br>Conditions:Members will be eligible Collect 200 points to spin the wheel 1 time immediately. <br><br> Note: For members who log in to play every day, they will receive 35 points immediately. And join the mission accomplished, have the right to spin the wheel immediately. <br><br>How to claim promotion <br>Contact online customer service to claim your bonus <br> Special rules and requirements. <br><br>1.Members without deposit will not be able to participate in this promotion <br>2.To participate in this promotion,the member must accept "Terms and Condition of the Website" <br>3.All offers will be setteled inpeso (PHP) (GMT+8). <br>4.This offer is for players with one account and 1IP only,if found that the player has more than one account. We reserve the right to give the member only. <br>5.22WIN reserves the right to block the account and the account balance. if the member id found to have fraudulent or threatening purposes on the Company's website. <br>6.22WIN reserves the right to modify, change or cancel the promotion. without prior notice.</h3>
+
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+<script>
+    var color = window.getComputedStyle(
+	document.querySelector('.box'), ':after'
+).getPropertyValue('background-image').value= "wheel_frame_blue.png";
+
+
+</script>
+
+</html>
